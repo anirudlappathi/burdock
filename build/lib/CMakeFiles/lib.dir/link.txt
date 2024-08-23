@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc liblib.a CMakeFiles/lib.dir/kdbfile.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib liblib.a

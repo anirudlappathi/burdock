@@ -83,19 +83,19 @@ src/CMakeFiles/src.dir/embedding.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/src.dir/embedding.cpp.s"
 	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anirud/Downloads/CSProjects/burdock/src/embedding.cpp -o CMakeFiles/src.dir/embedding.cpp.s
 
-src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o: src/CMakeFiles/src.dir/flags.make
-src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o: /Users/anirud/Downloads/CSProjects/burdock/src/kdb_file/kdbfile.cpp
-src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/anirud/Downloads/CSProjects/burdock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o"
-	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o -MF CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o.d -o CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o -c /Users/anirud/Downloads/CSProjects/burdock/src/kdb_file/kdbfile.cpp
+src/CMakeFiles/src.dir/errors.cpp.o: src/CMakeFiles/src.dir/flags.make
+src/CMakeFiles/src.dir/errors.cpp.o: /Users/anirud/Downloads/CSProjects/burdock/src/errors.cpp
+src/CMakeFiles/src.dir/errors.cpp.o: src/CMakeFiles/src.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/anirud/Downloads/CSProjects/burdock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/src.dir/errors.cpp.o"
+	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/src.dir/errors.cpp.o -MF CMakeFiles/src.dir/errors.cpp.o.d -o CMakeFiles/src.dir/errors.cpp.o -c /Users/anirud/Downloads/CSProjects/burdock/src/errors.cpp
 
-src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/src.dir/kdb_file/kdbfile.cpp.i"
-	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anirud/Downloads/CSProjects/burdock/src/kdb_file/kdbfile.cpp > CMakeFiles/src.dir/kdb_file/kdbfile.cpp.i
+src/CMakeFiles/src.dir/errors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/src.dir/errors.cpp.i"
+	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anirud/Downloads/CSProjects/burdock/src/errors.cpp > CMakeFiles/src.dir/errors.cpp.i
 
-src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/src.dir/kdb_file/kdbfile.cpp.s"
-	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anirud/Downloads/CSProjects/burdock/src/kdb_file/kdbfile.cpp -o CMakeFiles/src.dir/kdb_file/kdbfile.cpp.s
+src/CMakeFiles/src.dir/errors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/src.dir/errors.cpp.s"
+	cd /Users/anirud/Downloads/CSProjects/burdock/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anirud/Downloads/CSProjects/burdock/src/errors.cpp -o CMakeFiles/src.dir/errors.cpp.s
 
 src/CMakeFiles/src.dir/kdbnode.cpp.o: src/CMakeFiles/src.dir/flags.make
 src/CMakeFiles/src.dir/kdbnode.cpp.o: /Users/anirud/Downloads/CSProjects/burdock/src/kdbnode.cpp
@@ -156,7 +156,7 @@ src/CMakeFiles/src.dir/vectordb.cpp.s: cmake_force
 # Object files for target src
 src_OBJECTS = \
 "CMakeFiles/src.dir/embedding.cpp.o" \
-"CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o" \
+"CMakeFiles/src.dir/errors.cpp.o" \
 "CMakeFiles/src.dir/kdbnode.cpp.o" \
 "CMakeFiles/src.dir/kdbtree.cpp.o" \
 "CMakeFiles/src.dir/metadata.cpp.o" \
@@ -166,7 +166,7 @@ src_OBJECTS = \
 src_EXTERNAL_OBJECTS =
 
 src/libsrc.a: src/CMakeFiles/src.dir/embedding.cpp.o
-src/libsrc.a: src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o
+src/libsrc.a: src/CMakeFiles/src.dir/errors.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/kdbnode.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/kdbtree.cpp.o
 src/libsrc.a: src/CMakeFiles/src.dir/metadata.cpp.o

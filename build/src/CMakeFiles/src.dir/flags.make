@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/anirud/Downloads/CSProjects/burdock/src -I/Users/anirud/Downloads/CSProjects/burdock/lib
+CXX_INCLUDES = -I/Users/anirud/Downloads/CSProjects/burdock/include -I/Users/anirud/Downloads/CSProjects/burdock/src
 
-CXX_FLAGSarm64 =  -std=c++20 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -g -std=c++20 -D_GLIBCXX_DEBUG -O0 -gdwarf-4 -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
+CXX_FLAGSarm64 =  -std=c++23 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -g -std=c++23 -D_GLIBCXX_DEBUG -O0 -gdwarf-4 -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
 
-CXX_FLAGS =  -std=c++20 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -g -std=c++20 -D_GLIBCXX_DEBUG -O0 -gdwarf-4 -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.5
+CXX_FLAGS =  -std=c++23 -pedantic -Wall -Werror -Wfatal-errors -Wextra -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -g -std=c++23 -D_GLIBCXX_DEBUG -O0 -gdwarf-4 -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
 
