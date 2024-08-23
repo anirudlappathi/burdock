@@ -1,2 +1,2 @@
 # burdock
-open-source rust based vector database
+open-source c++ based local vector database
