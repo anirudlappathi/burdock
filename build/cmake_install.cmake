@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/anirud/Downloads/CSProjects/burdock/build/lib/cmake_install.cmake")
   include("/Users/anirud/Downloads/CSProjects/burdock/build/src/cmake_install.cmake")
+  include("/Users/anirud/Downloads/CSProjects/burdock/build/_deps/catch2-build/cmake_install.cmake")
 
 endif()
 

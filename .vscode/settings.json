@@ -72,7 +72,16 @@
     "cassert": "cpp",
     "deque": "cpp",
     "iomanip": "cpp",
-    "queue": "cpp"
+    "queue": "cpp",
+    "numeric": "cpp",
+    "stack": "cpp",
+    "iterator": "cpp",
+    "memory_resource": "cpp",
+    "future": "cpp",
+    "list": "cpp",
+    "regex": "cpp",
+    "set": "cpp",
+    "thread": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

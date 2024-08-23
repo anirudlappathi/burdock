@@ -5,32 +5,38 @@
 #include <random>
 
 class Embedding {
-  private:
-      float* _embedding;
-      // Metadata _metadata;
-      std::string _metadata;
+private:
+    float* _embedding;
+    std::string _metadata;
 
-  public:
-      unsigned dimensions;
+    void __load_magnitude();
+    float __dot_product(const Embedding* other) const; 
 
-      Embedding(unsigned dim);
-      Embedding(Embedding& other);
-      Embedding(std::vector<float>& insert_embedding);
-      Embedding(std::vector<float>& insert_embedding, std::string metadata);
-      Embedding(float* insert_embedding, unsigned dim, std::string metadata);
-      ~Embedding();
+public:
+    float _magnitude;
+    u_int dimensions;
 
-      float* GetEmbedding();
-      std::string GetMetadata();
-      float* GetEmbeddingData() const;
-      size_t GetMetadataLength() const;
+    Embedding() = delete;
 
-      void set(unsigned index, float f);
-      void set(int index, float f);
-      float get(unsigned index) const;
-      float get(int index) const;
+    Embedding(u_int dim);
+    Embedding(Embedding& other);
+    Embedding(std::vector<float>& insert_embedding);
+    Embedding(std::vector<float>& insert_embedding, std::string metadata);
+    Embedding(float* insert_embedding, u_int dim, std::string metadata);
+    ~Embedding();
 
-      float operator[](int index) const;
+    float* get_embedding();
+    std::string get_metadata();
+    size_t metadata_length() const;
 
-      friend std::ostream& operator<<(std::ostream& os, const Embedding& obj);
+    void set(u_int index, float f);
+    void set(int index, float f);
+    float at(u_int index) const;
+    float at(int index) const;
+
+    float cosine_similarity(Embedding* other);
+
+    float operator[](int index) const;
+
+    friend std::ostream& operator<<(std::ostream& os, const Embedding& obj);
 };

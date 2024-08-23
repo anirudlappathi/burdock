@@ -118,6 +118,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -143,6 +156,32 @@ src/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+#=============================================================================
+# Target rules for targets named Catch2
+
+# Build rule for target.
+Catch2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2
+.PHONY : Catch2
+
+# fast build rule for target.
+Catch2/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/build
+.PHONY : Catch2/fast
+
+#=============================================================================
+# Target rules for targets named Catch2WithMain
+
+# Build rule for target.
+Catch2WithMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2WithMain
+.PHONY : Catch2WithMain
+
+# fast build rule for target.
+Catch2WithMain/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
+.PHONY : Catch2WithMain/fast
+
 entry/main.o: entry/main.cpp.o
 .PHONY : entry/main.o
 
@@ -167,6 +206,30 @@ entry/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/entry/main.cpp.s
 .PHONY : entry/main.cpp.s
 
+tests/test_main.o: tests/test_main.cpp.o
+.PHONY : tests/test_main.o
+
+# target to build an object file
+tests/test_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_main.cpp.o
+.PHONY : tests/test_main.cpp.o
+
+tests/test_main.i: tests/test_main.cpp.i
+.PHONY : tests/test_main.i
+
+# target to preprocess a source file
+tests/test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_main.cpp.i
+.PHONY : tests/test_main.cpp.i
+
+tests/test_main.s: tests/test_main.cpp.s
+.PHONY : tests/test_main.s
+
+# target to generate assembly for a file
+tests/test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/tests/test_main.cpp.s
+.PHONY : tests/test_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,11 +238,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Catch2"
+	@echo "... Catch2WithMain"
 	@echo "... main"
 	@echo "... src"
+	@echo "... test"
 	@echo "... entry/main.o"
 	@echo "... entry/main.i"
 	@echo "... entry/main.s"
+	@echo "... tests/test_main.o"
+	@echo "... tests/test_main.i"
+	@echo "... tests/test_main.s"
 .PHONY : help
 
 

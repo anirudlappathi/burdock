@@ -1,2 +1,2 @@
-/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/embedding.cpp.o CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o CMakeFiles/src.dir/kdbnode.cpp.o CMakeFiles/src.dir/kdbtree.cpp.o CMakeFiles/src.dir/metadata.cpp.o CMakeFiles/src.dir/vectordb.cpp.o
+/usr/bin/ar qc libsrc.a CMakeFiles/src.dir/embedding.cpp.o CMakeFiles/src.dir/errors.cpp.o CMakeFiles/src.dir/kdbnode.cpp.o CMakeFiles/src.dir/kdbtree.cpp.o CMakeFiles/src.dir/metadata.cpp.o CMakeFiles/src.dir/vectordb.cpp.o
 /usr/bin/ranlib libsrc.a

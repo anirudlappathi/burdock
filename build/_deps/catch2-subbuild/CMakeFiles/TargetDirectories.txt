@@ -1,0 +1,3 @@
+/Users/anirud/Downloads/CSProjects/burdock/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
+/Users/anirud/Downloads/CSProjects/burdock/build/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
+/Users/anirud/Downloads/CSProjects/burdock/build/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir

@@ -155,29 +155,29 @@ embedding.cpp.s:
 	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/embedding.cpp.s
 .PHONY : embedding.cpp.s
 
-kdb_file/kdbfile.o: kdb_file/kdbfile.cpp.o
-.PHONY : kdb_file/kdbfile.o
+errors.o: errors.cpp.o
+.PHONY : errors.o
 
 # target to build an object file
-kdb_file/kdbfile.cpp.o:
-	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.o
-.PHONY : kdb_file/kdbfile.cpp.o
+errors.cpp.o:
+	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/errors.cpp.o
+.PHONY : errors.cpp.o
 
-kdb_file/kdbfile.i: kdb_file/kdbfile.cpp.i
-.PHONY : kdb_file/kdbfile.i
+errors.i: errors.cpp.i
+.PHONY : errors.i
 
 # target to preprocess a source file
-kdb_file/kdbfile.cpp.i:
-	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.i
-.PHONY : kdb_file/kdbfile.cpp.i
+errors.cpp.i:
+	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/errors.cpp.i
+.PHONY : errors.cpp.i
 
-kdb_file/kdbfile.s: kdb_file/kdbfile.cpp.s
-.PHONY : kdb_file/kdbfile.s
+errors.s: errors.cpp.s
+.PHONY : errors.s
 
 # target to generate assembly for a file
-kdb_file/kdbfile.cpp.s:
-	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/kdb_file/kdbfile.cpp.s
-.PHONY : kdb_file/kdbfile.cpp.s
+errors.cpp.s:
+	cd /Users/anirud/Downloads/CSProjects/burdock/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/errors.cpp.s
+.PHONY : errors.cpp.s
 
 kdbnode.o: kdbnode.cpp.o
 .PHONY : kdbnode.o
@@ -287,9 +287,9 @@ help:
 	@echo "... embedding.o"
 	@echo "... embedding.i"
 	@echo "... embedding.s"
-	@echo "... kdb_file/kdbfile.o"
-	@echo "... kdb_file/kdbfile.i"
-	@echo "... kdb_file/kdbfile.s"
+	@echo "... errors.o"
+	@echo "... errors.i"
+	@echo "... errors.s"
 	@echo "... kdbnode.o"
 	@echo "... kdbnode.i"
 	@echo "... kdbnode.s"
