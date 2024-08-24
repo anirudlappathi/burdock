@@ -1,4 +1,10 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "clang-tidy.tasksOnSave": "Run clang-tidy",
   "files.associations": {
     "ostream": "cpp",
     "__bit_reference": "cpp",
@@ -83,5 +89,6 @@
     "set": "cpp",
     "thread": "cpp"
   },
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json"
 }
