@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/embedding.cpp.o"
   "CMakeFiles/src.dir/embedding.cpp.o.d"
-  "CMakeFiles/src.dir/errors.cpp.o"
-  "CMakeFiles/src.dir/errors.cpp.o.d"
   "CMakeFiles/src.dir/kdbnode.cpp.o"
   "CMakeFiles/src.dir/kdbnode.cpp.o.d"
   "CMakeFiles/src.dir/kdbtree.cpp.o"
