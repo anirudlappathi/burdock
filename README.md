@@ -1,4 +1,5 @@
 
+
 <br/>
 <div align="center">
 
@@ -44,13 +45,13 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    mkdir build
    ```
-3. CD into the build folder
+4. CD into the build folder
    ```sh
    cd build  
    ```
-4. Make the proper cmake files
+5. Build the project
    ```sh
-   cmake ..
+   cmake .. && make
    ```
 ## Usage
 
